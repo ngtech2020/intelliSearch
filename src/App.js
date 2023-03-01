@@ -108,6 +108,7 @@ function App() {
     setFilterConfigData(filteredData);
     setRows(filteredData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage));
     setDataCount(filteredData.length);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, rowsPerPage, appliedFilters]);
 
   return (
